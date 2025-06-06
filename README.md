@@ -1,8 +1,8 @@
-# 🧠 Flask + ChromaDB Vector Store API
+# Flask + ChromaDB Vector Store API
 
 A Flask-based API service for storing and querying property-related documents using vector embeddings with ChromaDB.
 
-## 🚀 Features
+## Features
 
 - Add, update, delete, and view property documents
 - Embed documents using SentenceTransformer (`BAAI/bge-large-en`)
@@ -11,7 +11,7 @@ A Flask-based API service for storing and querying property-related documents us
 - API key-based authentication
 - Persistent ChromaDB storage
 
-## 🗂️ Folder Structure
+## Folder Structure
 
 ```
 flask_chroma/
@@ -30,7 +30,7 @@ flask_chroma/
 └── .gitignore                # Git ignore rules
 ```
 
-## 🔐 Authentication
+## Authentication
 
 All endpoints require an `x-api-key` header to be present in requests.
 
@@ -68,15 +68,13 @@ python run.py
 python test_api.py
 ```
 
-## 🧪 Testing
+## Testing
 
 - All endpoints are tested via `test_api.py`
 - Make sure your server is running before executing tests
 
-## 🛡️ Note
+## Note
 
 Do **not** expose the `.env` file in production. This is included only for demo/testing convenience.
 
 ---
-
-Made with ❤️ by Abishek Chakravarthy
