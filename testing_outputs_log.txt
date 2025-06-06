@@ -1,0 +1,352 @@
+=== Unauthorized Access Tests ===
+No Header: 401 {'error': 'API key is missing.'}
+Wrong API Key: 403 {'error': 'Invalid API key.'}
+
+=== Before Add ===
+Status: 200
+{
+  "data": null,
+  "documents": [
+    "3BHK in Whitefield, Bangalore for 98L with pool & gym.",
+    "2BHK in Whitefield, Bangalore for 98L with pool & gym."
+  ],
+  "embeddings": null,
+  "ids": [
+    "unit002",
+    "unit001"
+  ],
+  "included": [
+    "metadatas",
+    "documents"
+  ],
+  "metadatas": [
+    {
+      "developer": "Prestige2",
+      "features": [
+        "pool",
+        "gym"
+      ],
+      "location": "KK Nagar",
+      "mode": "customer",
+      "possession_date": "2025-12-31",
+      "price": 9800000.0,
+      "project_name": "Abi Enclave",
+      "property_type": "3BHK",
+      "source": "scraped_web",
+      "timestamp": "2025-06-05T10:00:00",
+      "type": "unit"
+    },
+    {
+      "developer": "Prestige",
+      "features": [
+        "pool",
+        "gym",
+        "garden"
+      ],
+      "location": "Whitefield",
+      "mode": "customer",
+      "possession_date": "2025-12-31",
+      "price": 9900000.0,
+      "project_name": "Whitefield Enclave - Updated",
+      "property_type": "2BHK",
+      "source": "scraped_web",
+      "timestamp": "2025-06-05T12:00:00",
+      "type": "unit"
+    }
+  ],
+  "uris": null
+}
+
+=== Test Add Data ===
+Add: 200 {'id': 'unit001', 'message': 'Data added successfully.'}
+
+=== After Add ===
+Status: 200
+{
+  "data": null,
+  "documents": [
+    "3BHK in Whitefield, Bangalore for 98L with pool & gym.",
+    "2BHK in Whitefield, Bangalore for 98L with pool & gym."
+  ],
+  "embeddings": null,
+  "ids": [
+    "unit002",
+    "unit001"
+  ],
+  "included": [
+    "metadatas",
+    "documents"
+  ],
+  "metadatas": [
+    {
+      "developer": "Prestige2",
+      "features": [
+        "pool",
+        "gym"
+      ],
+      "location": "KK Nagar",
+      "mode": "customer",
+      "possession_date": "2025-12-31",
+      "price": 9800000.0,
+      "project_name": "Abi Enclave",
+      "property_type": "3BHK",
+      "source": "scraped_web",
+      "timestamp": "2025-06-05T10:00:00",
+      "type": "unit"
+    },
+    {
+      "developer": "Prestige",
+      "features": [
+        "pool",
+        "gym",
+        "garden"
+      ],
+      "location": "Whitefield",
+      "mode": "customer",
+      "possession_date": "2025-12-31",
+      "price": 9900000.0,
+      "project_name": "Whitefield Enclave - Updated",
+      "property_type": "2BHK",
+      "source": "scraped_web",
+      "timestamp": "2025-06-05T12:00:00",
+      "type": "unit"
+    }
+  ],
+  "uris": null
+}
+
+=== Before Add2 ===
+Status: 200
+{
+  "data": null,
+  "documents": [
+    "3BHK in Whitefield, Bangalore for 98L with pool & gym.",
+    "2BHK in Whitefield, Bangalore for 98L with pool & gym."
+  ],
+  "embeddings": null,
+  "ids": [
+    "unit002",
+    "unit001"
+  ],
+  "included": [
+    "metadatas",
+    "documents"
+  ],
+  "metadatas": [
+    {
+      "developer": "Prestige2",
+      "features": [
+        "pool",
+        "gym"
+      ],
+      "location": "KK Nagar",
+      "mode": "customer",
+      "possession_date": "2025-12-31",
+      "price": 9800000.0,
+      "project_name": "Abi Enclave",
+      "property_type": "3BHK",
+      "source": "scraped_web",
+      "timestamp": "2025-06-05T10:00:00",
+      "type": "unit"
+    },
+    {
+      "developer": "Prestige",
+      "features": [
+        "pool",
+        "gym",
+        "garden"
+      ],
+      "location": "Whitefield",
+      "mode": "customer",
+      "possession_date": "2025-12-31",
+      "price": 9900000.0,
+      "project_name": "Whitefield Enclave - Updated",
+      "property_type": "2BHK",
+      "source": "scraped_web",
+      "timestamp": "2025-06-05T12:00:00",
+      "type": "unit"
+    }
+  ],
+  "uris": null
+}
+
+=== Test Add Data 2 ===
+Add: 200 {'id': 'unit002', 'message': 'Data added successfully.'}
+
+=== After Add2 ===
+Status: 200
+{
+  "data": null,
+  "documents": [
+    "3BHK in Whitefield, Bangalore for 98L with pool & gym.",
+    "2BHK in Whitefield, Bangalore for 98L with pool & gym."
+  ],
+  "embeddings": null,
+  "ids": [
+    "unit002",
+    "unit001"
+  ],
+  "included": [
+    "metadatas",
+    "documents"
+  ],
+  "metadatas": [
+    {
+      "developer": "Prestige2",
+      "features": [
+        "pool",
+        "gym"
+      ],
+      "location": "KK Nagar",
+      "mode": "customer",
+      "possession_date": "2025-12-31",
+      "price": 9800000.0,
+      "project_name": "Abi Enclave",
+      "property_type": "3BHK",
+      "source": "scraped_web",
+      "timestamp": "2025-06-05T10:00:00",
+      "type": "unit"
+    },
+    {
+      "developer": "Prestige",
+      "features": [
+        "pool",
+        "gym",
+        "garden"
+      ],
+      "location": "Whitefield",
+      "mode": "customer",
+      "possession_date": "2025-12-31",
+      "price": 9900000.0,
+      "project_name": "Whitefield Enclave - Updated",
+      "property_type": "2BHK",
+      "source": "scraped_web",
+      "timestamp": "2025-06-05T12:00:00",
+      "type": "unit"
+    }
+  ],
+  "uris": null
+}
+
+=== Test Update Data ===
+Update: 200 {'message': "Metadata updated for ID 'unit001'."}
+
+=== After Update ===
+Status: 200
+{
+  "data": null,
+  "documents": [
+    "3BHK in Whitefield, Bangalore for 98L with pool & gym.",
+    "2BHK in Whitefield, Bangalore for 98L with pool & gym."
+  ],
+  "embeddings": null,
+  "ids": [
+    "unit002",
+    "unit001"
+  ],
+  "included": [
+    "metadatas",
+    "documents"
+  ],
+  "metadatas": [
+    {
+      "developer": "Prestige2",
+      "features": [
+        "pool",
+        "gym"
+      ],
+      "location": "KK Nagar",
+      "mode": "customer",
+      "possession_date": "2025-12-31",
+      "price": 9800000.0,
+      "project_name": "Abi Enclave",
+      "property_type": "3BHK",
+      "source": "scraped_web",
+      "timestamp": "2025-06-05T10:00:00",
+      "type": "unit"
+    },
+    {
+      "developer": "Prestige",
+      "features": [
+        "pool",
+        "gym",
+        "garden"
+      ],
+      "location": "Whitefield",
+      "mode": "customer",
+      "possession_date": "2025-12-31",
+      "price": 9900000.0,
+      "project_name": "Whitefield Enclave - Updated",
+      "property_type": "2BHK",
+      "source": "scraped_web",
+      "timestamp": "2025-06-05T12:00:00",
+      "type": "unit"
+    }
+  ],
+  "uris": null
+}
+
+=== Test Generate Embedding ===
+Embedding: 200
+Embedding Length: 1024
+
+=== Test Query DB ===
+Query Results: 200
+{
+  "data": null,
+  "distances": [
+    [
+      0.08039975166320801,
+      0.10106706619262695
+    ]
+  ],
+  "documents": [
+    [
+      "2BHK in Whitefield, Bangalore for 98L with pool & gym.",
+      "3BHK in Whitefield, Bangalore for 98L with pool & gym."
+    ]
+  ],
+  "embeddings": null,
+  "ids": [
+    [
+      "unit001",
+      "unit002"
+    ]
+  ],
+  "included": [
+    "metadatas",
+    "documents",
+    "distances"
+  ],
+  "metadatas": [
+    [
+      {
+        "developer": "Prestige",
+        "features": "[\"pool\", \"gym\", \"garden\"]",
+        "location": "Whitefield",
+        "mode": "customer",
+        "possession_date": "2025-12-31",
+        "price": 9900000.0,
+        "project_name": "Whitefield Enclave - Updated",
+        "property_type": "2BHK",
+        "source": "scraped_web",
+        "timestamp": "2025-06-05T12:00:00",
+        "type": "unit"
+      },
+      {
+        "developer": "Prestige2",
+        "features": "[\"pool\", \"gym\"]",
+        "location": "KK Nagar",
+        "mode": "customer",
+        "possession_date": "2025-12-31",
+        "price": 9800000.0,
+        "project_name": "Abi Enclave",
+        "property_type": "3BHK",
+        "source": "scraped_web",
+        "timestamp": "2025-06-05T10:00:00",
+        "type": "unit"
+      }
+    ]
+  ],
+  "uris": null
+}
